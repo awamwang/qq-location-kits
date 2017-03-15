@@ -1,0 +1,15 @@
+{
+  "presets": [
+    "es2015",
+    "stage-2"
+  ],
+  "plugins": [
+    "transform-runtime",
+    "add-module-exports"
+  ],
+  "ignore": [
+    "src/libs"
+  ],
+  "comments": false,
+  "sourceMaps": "inline"
+}
