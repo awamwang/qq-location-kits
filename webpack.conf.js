@@ -24,6 +24,18 @@ module.exports = {
       },
       {
         test: /\.js$/,
+        loader: 'source-map-loader',
+        enforce: 'pre',
+        include: path.resolve(__dirname, './src'),
+        exclude: /node_modules/
+      },
+      { test: /\.tsx?$/,
+        loader: 'awesome-typescript-loader',
+        include: path.resolve(__dirname, './src'),
+        exclude: /node_modules/
+      },
+      {
+        test: /\.js$/,
         loader: 'babel-loader',
         include: path.resolve(__dirname, './src'),
         exclude: /node_modules/
